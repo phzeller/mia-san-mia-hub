@@ -24,35 +24,39 @@ const Index = () => {
                 <div className="w-8 h-8 bg-primary-foreground/20 rounded-full flex items-center justify-center">
                   <span className="text-primary-foreground font-bold text-sm">FCB</span>
                 </div>
-                <span className="font-bold text-lg">Bayern Fanclub</span>
+                <div className="flex flex-col">
+                  <span className="font-bold text-lg">FC Bayern München</span>
+                  <span className="text-sm opacity-80">Fanclub Emertsham</span>
+                </div>
               </div>
               <p className="text-primary-foreground/80">
-                The most passionate FC Bayern München supporters, bringing fans together since 2009.
+                Bayerns leidenschaftlichster Fanclub seit 2009 - dahoam im Besenwirt Emertsham.
               </p>
             </div>
             
             <div>
-              <h3 className="font-bold text-lg mb-4">Quick Links</h3>
+              <h3 className="font-bold text-lg mb-4">Schnellzugriff</h3>
               <ul className="space-y-2 text-primary-foreground/80">
                 <li><a href="#home" className="hover:text-primary-foreground transition-smooth">Home</a></li>
-                <li><a href="#announcements" className="hover:text-primary-foreground transition-smooth">News</a></li>
-                <li><a href="#about" className="hover:text-primary-foreground transition-smooth">About</a></li>
-                <li><a href="#events" className="hover:text-primary-foreground transition-smooth">Events</a></li>
+                <li><a href="#announcements" className="hover:text-primary-foreground transition-smooth">Neuigkeiten</a></li>
+                <li><a href="#about" className="hover:text-primary-foreground transition-smooth">Über uns</a></li>
+                <li><a href="#events" className="hover:text-primary-foreground transition-smooth">Termine</a></li>
               </ul>
             </div>
             
             <div>
-              <h3 className="font-bold text-lg mb-4">Contact Info</h3>
+              <h3 className="font-bold text-lg mb-4">Besenwirt Emertsham</h3>
               <div className="text-primary-foreground/80 space-y-2">
-                <p>info@bayernfanclub.com</p>
-                <p>+49 89 1234 5678</p>
-                <p>München, Germany</p>
+                <p>info@fcb-emertsham.de</p>
+                <p>+49 9404 1234 567</p>
+                <p>Emertsham, Bayern</p>
+                <p className="text-sm italic">Jeden Spieltag geöffnet!</p>
               </div>
             </div>
           </div>
           
           <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/60">
-            <p>&copy; 2024 Bayern Fanclub. All rights reserved. Mia san mia!</p>
+            <p>&copy; 2024 FC Bayern München Fanclub Emertsham. Mia san mia!</p>
           </div>
         </div>
       </footer>

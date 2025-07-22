@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/bayern-hero.jpg";
+import heroImage from "@/assets/emertsham-bayern-hero.jpg";
 import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
@@ -22,9 +22,17 @@ const Hero = () => {
             Mia San
             <span className="block text-accent">Mia</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-            Join the most passionate FC Bayern München fanclub. Together we celebrate every victory, 
-            support through every challenge, and live the Bayern spirit.
+          <div className="mb-4">
+            <h2 className="text-2xl md:text-3xl font-semibold text-primary-foreground/90 mb-2">
+              FC Bayern München Fanclub Emertsham
+            </h2>
+            <p className="text-lg md:text-xl text-accent font-medium">
+              Dahoam im Besenwirt • Since 2009
+            </p>
+          </div>
+          <p className="text-lg md:text-xl mb-8 text-primary-foreground/80 max-w-2xl mx-auto">
+            Welcome to Bavaria's most passionate fanclub in the heart of Emertsham. 
+            Join us at the Besenwirt for every match, celebration, and unforgettable Bayern moment.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button variant="hero" size="lg" className="px-8 py-4 text-lg">

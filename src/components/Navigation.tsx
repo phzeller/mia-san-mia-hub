@@ -17,9 +17,12 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">FCB</span>
+              <span className="text-primary-foreground font-bold text-xs">FCB</span>
             </div>
-            <span className="font-bold text-lg">Bayern Fanclub</span>
+            <div className="flex flex-col">
+              <span className="font-bold text-sm leading-tight">FC Bayern München</span>
+              <span className="text-xs text-muted-foreground leading-tight">Fanclub Emertsham</span>
+            </div>
           </div>
 
           {/* Desktop Navigation */}

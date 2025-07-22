@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Heart, Users, Calendar, Trophy, Target, Globe } from "lucide-react";
+import { Heart, Users, Calendar, Trophy, Target, Globe, Home } from "lucide-react";
+import besenwirtImage from "@/assets/besenwirt-interior.jpg";
 
 const stats = [
   { icon: Users, label: "Active Members", value: "350+" },
@@ -12,18 +13,18 @@ const stats = [
 const values = [
   {
     icon: Heart,
-    title: "Passion",
-    description: "We live and breathe Bayern München. Our love for the club runs deep and drives everything we do."
+    title: "Leidenschaft",
+    description: "Bayern München ist unser Leben. Diese Leidenschaft verbindet uns alle im Besenwirt."
   },
   {
     icon: Users,
-    title: "Community",
-    description: "We're more than fans - we're a family. Together we support each other and our beloved team."
+    title: "Gemeinschaft", 
+    description: "Wir sind mehr als nur Fans - wir sind eine Familie aus Emertsham und Umgebung."
   },
   {
-    icon: Target,
-    title: "Loyalty",
-    description: "Through victories and defeats, we stand by Bayern. Our loyalty never wavers, no matter the circumstances."
+    icon: Home,
+    title: "Tradition",
+    description: "Der Besenwirt ist unser Zuhause, wo bayerische Gemütlichkeit und Fußballbegeisterung verschmelzen."
   }
 ];
 
@@ -32,10 +33,10 @@ const About = () => {
     <section id="about" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">About Our Club</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Founded by passionate Bayern supporters, we've been bringing fans together 
-            for over 15 years to celebrate the greatest football club in the world.
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Über unseren Verein</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Seit 2009 bringen wir leidenschaftliche Bayern-Fans in Emertsham zusammen. 
+            Unser Zuhause ist der Besenwirt - hier wird jedes Spiel zum Erlebnis.
           </p>
         </div>
 
@@ -57,32 +58,46 @@ const About = () => {
         {/* Main Content */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h3 className="text-3xl font-bold mb-6">Our Story</h3>
+            <h3 className="text-3xl font-bold mb-6">Unsere Geschichte</h3>
             <div className="space-y-4 text-lg leading-relaxed">
               <p>
-                Our fanclub was born in 2009 from the simple desire to watch Bayern München 
-                matches together with fellow supporters. What started as a small group of friends 
-                meeting in a local pub has grown into one of the most active international fan clubs.
+                Der FC Bayern München Fanclub Emertsham wurde 2009 von einer Gruppe begeisterter 
+                Bayern-Fans gegründet. Was als kleines Treffen im örtlichen Besenwirt begann, 
+                ist zu einer der aktivsten Fangemeinschaften in Bayern geworden.
               </p>
               <p>
-                We organize trips to Munich for home matches, host viewing parties for every game, 
-                and create a community where Bayern fans can connect, celebrate, and share their 
-                passion for the greatest club in football history.
+                Unser Herz schlägt im Besenwirt - hier schauen wir jedes Spiel gemeinsam, 
+                feiern Siege und stehen auch in schweren Zeiten zusammen. Die gemütliche 
+                Atmosphäre macht jeden Spieltag zu einem besonderen Erlebnis.
               </p>
               <p>
-                Whether you're a lifelong supporter or new to the Bayern family, you'll find 
-                a warm welcome and lifetime friendships in our club. Mia san mia - we are who we are!
+                Von Emertsham aus organisieren wir Fahrten nach München, besuchen Heimspiele 
+                in der Allianz Arena und pflegen die Traditionen unseres geliebten Vereins. 
+                Ob langjähriger Fan oder Neuling - bei uns findet jeder ein Zuhause!
               </p>
             </div>
             <div className="mt-8">
               <Button variant="hero" size="lg">
-                Join Our Community
+                Mitglied werden
               </Button>
             </div>
           </div>
 
           <div className="space-y-6">
-            <h3 className="text-3xl font-bold">Our Values</h3>
+            <div className="relative rounded-2xl overflow-hidden shadow-primary">
+              <img 
+                src={besenwirtImage} 
+                alt="Besenwirt Interior" 
+                className="w-full h-64 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-primary-foreground">
+                <h4 className="font-bold text-lg">Unser Besenwirt</h4>
+                <p className="text-sm opacity-90">Das Herz unseres Fanclubs</p>
+              </div>
+            </div>
+            
+            <h3 className="text-2xl font-bold mb-4">Unsere Werte</h3>
             {values.map((value, index) => (
               <Card key={index} className="p-6 hover:shadow-primary transition-smooth">
                 <CardContent className="flex items-start gap-4 p-0">
@@ -101,17 +116,17 @@ const About = () => {
 
         {/* Call to Action */}
         <div className="text-center bg-gradient-primary rounded-2xl p-12 text-primary-foreground">
-          <h3 className="text-3xl font-bold mb-4">Ready to Join the Bayern Family?</h3>
+          <h3 className="text-3xl font-bold mb-4">Werde Teil der Bayern-Familie!</h3>
           <p className="text-xl mb-8 opacity-90">
-            Experience the thrill of being part of something bigger. Join hundreds of passionate 
-            Bayern supporters from around the world.
+            Erlebe die Faszination Bayern München gemeinsam mit uns im Besenwirt Emertsham. 
+            Hier findest du echte Freunde und unvergessliche Fußballmomente.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="secondary" size="lg">
-              Become a Member
+              Mitglied werden
             </Button>
             <Button variant="outline" size="lg">
-              Contact Us
+              Kontakt aufnehmen
             </Button>
           </div>
         </div>
